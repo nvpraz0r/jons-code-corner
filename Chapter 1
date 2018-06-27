@@ -1,0 +1,55 @@
+// learning C++
+// Start: 05-09-2018
+// End: ???
+// Book: Beginning C++ Through Game Programming: Fourth Edition - Michael Dawson
+// Page: 22
+
+#include <iostream>
+using namespace std;
+
+int main () {
+
+//There are two steps when creating variables: declaring and assigning
+//Declaring Variables
+int score;
+double distance;
+char tryAgain;
+bool shieldsUp;
+short lives, covenantKilled;
+
+//Assigning variable values
+score = 0;
+distance = 1200.76;
+tryAgain = 'y';
+shieldsUp = true;
+lives = 3;
+covenantKilled = 10;
+
+//It is possible to declare and assign variables in the same statement
+//Here I declare that a "double" variable named plasmaOverheat's assigned value is 6572.89
+double plasmaOverheat = 6572.89;
+
+
+cout << "\nScore: " << score << endl;
+cout << "Distance: " << distance << endl;
+cout << "Play again? " << tryAgain << endl;
+//Skipping shieldsUp since one does not generally print Boolean values
+cout << "Lives :" << lives << endl;
+cout << "Aliens Killed: " << covenantKilled << endl;
+cout << "Engine Temperature: " << plasmaOverheat << endl;
+
+//Even user input needs to be assigned; cannot use a variable that isn't defined otherwise the complier wouldn't care to remember it
+int fuel;
+cout << "\nHow much fuel do we have left? " ;
+//Taking user input
+cin >> fuel;
+//Printing user input as "fuel"
+cout << "Fuel: " << fuel << endl;
+
+//Here I declared "ushort" as unsigned short int for the sake of brevity
+typedef unsigned short int ushort;
+ushort bonus = 10;
+cout << "\nBonus: " << bonus << endl;
+
+return 0;
+}
